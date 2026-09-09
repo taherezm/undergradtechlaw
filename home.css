@@ -84,6 +84,8 @@
 .cta-row.single .cta {
   flex: none;
   width: 100%;
+  justify-content: center;
+  text-align: center;
 }
 .cta {
   flex: 1;
@@ -117,21 +119,9 @@
   pointer-events: none;
   transition: opacity 280ms ease;
 }
-.cta .arrow {
-  font-family: var(--sans);
-  font-size: 20px;
-  opacity: 0;
-  transform: translateX(-6px);
-  transition: opacity 280ms ease, transform 280ms ease;
-  color: var(--ink-dim);
-}
 .cta:hover {
   background: var(--glass-bg-hover);
   border-color: var(--glass-border-hover);
-}
-.cta:hover .arrow {
-  opacity: 1;
-  transform: translateX(0);
 }
 .cta-divider {
   width: 1px;
@@ -184,7 +174,7 @@
 /* People */
 .leaders {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   margin-bottom: 48px;
 }

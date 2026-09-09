@@ -74,13 +74,6 @@
 
   .tool-entry.is-live {
     color: inherit;
-    transition: background 220ms ease, border-color 220ms ease;
-  }
-
-  .tool-entry.is-live:hover,
-  .tool-entry.is-live:focus-visible {
-    background: rgba(255,255,255,0.025);
-    border-bottom-color: var(--rule-strong);
   }
 
   .tool-entry.is-live:focus-visible {
@@ -172,30 +165,6 @@
     font-family: var(--serif);
     font-size: 17px;
     color: var(--ink);
-  }
-
-  .tool-action::after {
-    content: "\2192";
-    color: var(--ink-faint);
-    transition: color 220ms ease, transform 220ms ease;
-  }
-
-  .tool-entry.is-live:hover .tool-action::after,
-  .tool-entry.is-live:focus-visible .tool-action::after {
-    color: var(--ink);
-    transform: translateX(3px);
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .tool-entry.is-live,
-    .tool-action::after {
-      transition: none;
-    }
-
-    .tool-entry.is-live:hover .tool-action::after,
-    .tool-entry.is-live:focus-visible .tool-action::after {
-      transform: none;
-    }
   }
 
   @media (max-width: 760px) {

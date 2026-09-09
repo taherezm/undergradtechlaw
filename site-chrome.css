@@ -426,9 +426,6 @@ section + section { border-top: 1px solid var(--rule); }
 }
 .form .submit:hover { background: rgba(255,255,255,0.04); border-color: var(--glass-border-hover); }
 .form .submit:disabled { opacity: 0.5; cursor: progress; }
-.form .submit .arrow { transition: transform 220ms ease; }
-.form .submit:hover .arrow { transform: translateX(4px); }
-
 /* Honeypot. Never visible to real users. */
 .hp-field { position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; }
 
