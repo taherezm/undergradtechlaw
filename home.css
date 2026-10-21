@@ -3,15 +3,6 @@
    Shared chrome, nav, type, and footer live in site-chrome.css.
    ============================================================ */
 
-.person {
-  transition: background 360ms ease, border-color 360ms ease, box-shadow 360ms ease, transform 360ms ease;
-}
-.person:hover {
-  border-color: var(--glass-border-hover);
-  box-shadow: inset 0 1px 0 var(--glass-highlight), 0 30px 50px -22px rgba(0,0,0,0.6);
-  transform: translateY(-2px);
-}
-
 .home-page .sec-head {
   display: block;
   margin-bottom: 64px;
@@ -185,25 +176,12 @@
 }
 .person {
   background: var(--glass-bg);
-  backdrop-filter: blur(14px) saturate(140%);
-  -webkit-backdrop-filter: blur(14px) saturate(140%);
   border: 1px solid var(--glass-border);
   padding: 28px 24px;
   min-height: 180px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: relative;
-}
-.person::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 1px;
-  background: linear-gradient(to right, transparent, var(--glass-highlight), transparent);
-  pointer-events: none;
 }
 .person .role {
   font-family: var(--serif);
@@ -237,11 +215,10 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: color 200ms ease, transform 200ms ease;
+  transition: color 200ms ease;
 }
 .person .socials a:hover {
   color: var(--ink);
-  transform: translateY(-2px);
 }
 .person .socials a:focus-visible {
   color: var(--ink);
@@ -257,14 +234,6 @@
 .researchers .person {
   padding: 12px 14px;
   min-height: 0;
-  backdrop-filter: none;
-  -webkit-backdrop-filter: none;
-  transition: background-color 200ms ease, border-color 200ms ease;
-}
-.researchers .person:hover {
-  background: var(--glass-bg-hover);
-  box-shadow: none;
-  transform: none;
 }
 .researchers .name {
   font-size: 17px;
