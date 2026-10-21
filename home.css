@@ -180,8 +180,8 @@
 }
 .researchers {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
 }
 .person {
   background: var(--glass-bg);
@@ -253,6 +253,16 @@
   height: 18px;
   display: block;
   fill: currentColor;
+}
+.researchers .person {
+  padding: 12px 14px;
+  min-height: 0;
+}
+.researchers .name {
+  font-size: 17px;
+}
+.researchers .socials {
+  margin-top: 4px;
 }
 @media (max-width: 1000px) {
   .leaders { grid-template-columns: repeat(2, 1fr); }
