@@ -1,9 +1,7 @@
-# Undergraduate Technology Law at IU
-
+UTL Site 
 https://www.undergradtechlaw.org/
 
-## License
-
+License
 Original written content, research materials, case summaries, and site copy are
 licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0
 International (CC BY-NC-SA 4.0), unless otherwise noted. See
